@@ -7378,3 +7378,19 @@ Turbo::StreamsChannel stopped streaming from Z2lkOi8vY2hhdGFwcC9Sb29tLzg
 Unsubscribing from channel: {"channel":"Turbo::StreamsChannel","signed_stream_name":"InJvb21zIg==--658d0edd9ad1b3d622bc5c2c551fb07ae842004d92ab903c122786c7cf59f25b"}
 Turbo::StreamsChannel stopped streaming from rooms
 Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-12-05 16:46:17 -0500
+Started GET "/" for 127.0.0.1 at 2023-12-05 16:50:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#index as HTML
+Redirected to http://127.0.0.1:3000/signin
+Completed 302 Found in 59ms (ActiveRecord: 3.1ms | Allocations: 20279)
+
+
+Started GET "/signin" for 127.0.0.1 at 2023-12-05 16:50:03 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1898)
+  Rendered layout layouts/application.html.erb (Duration: 75.9ms | Allocations: 41681)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.0ms | Allocations: 43300)
+
+
